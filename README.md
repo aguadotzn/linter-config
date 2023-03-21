@@ -1,7 +1,29 @@
 # Linter configuration 🔦
 
-This repository contains several configurations for linters, formatters or other useful tools.
+This repository contains several configurations for linters, formatters or others useful tools.  
 
+## Basic config (TS projects)
+By default, I installed the following stuff for my typescript projects
+
+```
+# ESLint
+npm install --save-dev eslint
+
+# Extra plugins 
+npm install --save-dev @typescript-eslint/eslint-plugin eslint-plugin-prettier
+
+# Prettier and dependencies
+npm install --save-dev prettier prettier-eslint eslint-config-prettier
+```
+Resume:
+- `eslint` is the main ESLint library, the core.
+- `@typescript-eslint/eslint-plugin` is a plugin that contains a bunch of TypeScript-specific rules.
+- _Prettier_ is the Prettier library, nothing else.
+- `eslint-config-prettier` helps us to disable all ESLint rules that may conflict with Prettier
+- `eslint-plugin-prettier` runs Prettier as an ESLint rule.
+  
+  ### Extra (Testing)
+  I also try to install [ESLint for Jest](https://www.npmjs.com/package/eslint-plugin-jest)
 
 ## License
 
